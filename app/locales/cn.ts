@@ -23,7 +23,8 @@ const cn = {
     ModeDescribe: "识图（图生文）模式",
     NeedInputUseImgPrompt:
       "垫图模式下需要输入内容才能使用图片，请以“/mj”开头输入内容",
-    BlendMinImg: (min: number,max:number) => `混图模式下至少需要 ${min} 张图片，至多 ${max} 张图片`,
+    BlendMinImg: (min: number, max: number) =>
+      `混图模式下至少需要 ${min} 张图片，至多 ${max} 张图片`,
     TaskErrUnknownType: "任务提交失败：未知的任务类型",
     TaskErrNotSupportType: (type: string) =>
       `任务提交失败：不支持的任务类型 -> ${type}`,
@@ -113,6 +114,14 @@ const cn = {
     Reset: "[unused]",
     ResetConfirm: "确认清空历史摘要？",
   },
+  // Journey: {
+  //   Title: "是否作为绘画",
+  //   EmptyContent: "绘画EmptyContent",
+  //   Send: "绘画Send",
+  //   Copy: "绘画Copy",
+  //   Reset: "[unused]",
+  //   ResetConfirm: "绘画ResetConfirm",
+  // },
   Home: {
     NewChat: "新的聊天",
     DeleteChat: "确认删除选中的对话？",
@@ -277,6 +286,14 @@ const cn = {
       HideContext: {
         Title: "隐藏预设对话",
         SubTitle: "隐藏后预设对话不会出现在聊天界面",
+      },
+      Journey: {
+        Title: "是否作为绘画",
+        SubTitle: "设置后只作为绘画",
+        // Send: "绘画Send",
+        // Copy: "绘画Copy",
+        // Reset: "[unused]",
+        // ResetConfirm: "绘画ResetConfirm",
       },
     },
   },

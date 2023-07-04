@@ -117,6 +117,21 @@ export function MaskConfig(props: {
             }}
           ></input>
         </ListItem>
+        <ListItem
+          title={Locale.Mask.Config.Journey.Title}
+          subTitle={Locale.Mask.Config.Journey.SubTitle}
+        >
+          <input
+            type="checkbox"
+            checked={props.mask.isJourney}
+            onChange={(e) => {
+              props.updateMask((mask) => {
+                mask.isJourney = e.currentTarget.checked;
+                console.log("mask", mask);
+              });
+            }}
+          ></input>
+        </ListItem>
         {props.shouldSyncFromGlobal ? (
           <ListItem
             title={Locale.Mask.Config.Sync.Title}

@@ -11,6 +11,7 @@ export type Mask = {
   avatar: string;
   name: string;
   hideContext?: boolean;
+  isJourney?: boolean;
   context: ChatMessage[];
   syncGlobalConfig?: boolean;
   modelConfig: ModelConfig;
@@ -45,6 +46,7 @@ export const createEmptyMask = () =>
     modelConfig: { ...useAppConfig.getState().modelConfig },
     lang: getLang(),
     builtin: false,
+    isJourney: false,
   } as Mask);
 
 export const useMaskStore = create<MaskStore>()(

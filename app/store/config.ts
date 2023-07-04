@@ -37,6 +37,7 @@ export const DEFAULT_CONFIG = {
     sendMemory: true,
     historyMessageCount: 4,
     compressMessageLengthThreshold: 1000,
+    // isJourney:false
   },
 };
 
@@ -192,6 +193,7 @@ export const useAppConfig = create<ChatConfigStore>()(
         state.modelConfig.historyMessageCount = 4;
         state.modelConfig.compressMessageLengthThreshold = 1000;
         state.dontShowMaskSplashScreen = false;
+        // state.modelConfig.isJourney = false;
 
         return state;
       },

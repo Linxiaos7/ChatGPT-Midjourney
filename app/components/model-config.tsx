@@ -135,6 +135,19 @@ export function ModelConfigList(props: {
           }
         ></input>
       </ListItem>
+      {/* <div id="jouneyBox">
+      <ListItem title={Locale.Journey.Title} subTitle={Locale.Journey.Send}>
+        <input
+          type="checkbox"
+          checked={props.modelConfig.isJourney}
+          onChange={(e) =>
+            props.updateConfig(
+              (config) => (config.isJourney = e.currentTarget.checked),
+            )
+          }
+        ></input>
+      </ListItem>
+      </div> */}
     </>
   );
 }
